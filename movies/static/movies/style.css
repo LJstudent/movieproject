@@ -1,0 +1,13 @@
+h1 {
+    color: green;
+}
+
+div {
+  background-color: #49b293;
+  width: 200px;
+  height: 160px;
+  margin: 100px auto 0 auto;
+  box-shadow: 0 10px 6px -6px #777;
+  transform: skew(-20deg) rotate(-20deg);
+  
+}

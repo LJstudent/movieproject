@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie's</title>
+<link rel="stylesheet" type="text/css" href="{% static 'movies/style.css' %}">
+</head>
+<body>
+
+<h1> Hello </h1>
+{% if latest_movies_list %}
+    <ul>
+    {% for movie in latest_movies_list %}
+        <li>{{ movie.movie_title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No movies are available.</p>
+{% endif %}
+
+
+<div></div>
+<div></div>
+</body>
+</html>
